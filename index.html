@@ -2,10 +2,99 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Iseng Aja</title>
-	<link rel="stylesheet" href="mystyle.css">
+	<title>Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/main.js" type="module"></script>
+	<link rel="stylesheet" href="css/app.css">
+	<style>
+		body{
+			font-family: 'Courier New', Courier, monospace;			
+			font-size: 1.5em;
+		}
+
+		h2{
+			text-align: center;		
+		}
+
+		button{
+			border-radius: 4px;
+			border: 1px solid #666;
+			padding: 4px;
+			float: right;
+		}
+
+		ol {
+			list-style-type: lower-alpha;
+		}
+
+		button{
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 1em;
+		}
+
+		#dialogResult{
+			z-index: 2;
+			background-color: white;
+			border-radius: 6px;
+			border: 1px solid #666;
+			position: absolute;
+			padding: 8px;
+			top: 25vh;
+			min-height: 20vh;
+			display: none;
+		}
+
+		#containerScore{
+			font-size: 2em;
+			color: maroon;
+			font-weight: bold;
+			text-align: right;
+		}
+
+		#containerResult{
+			text-align: center;
+		}
+
+		@media screen and (min-width: 480px) {
+
+			.container{
+				width: 50vw;
+				display: block;
+				margin: 0px auto;
+			}
+
+			#dialogResult{
+				width: 50vw;
+				left: 25vw;
+			}
+		}
+		
+		@media screen and (max-width: 480px) {
+			.container{
+				width: 80vw;
+				display: block;
+				margin: 0px auto;
+			}
+
+			#dialogResult{
+				width: 80vw;
+				left: 10vw;
+			}
+		}
+	</style>
 </head>
 <body>
-</script>
+	<div class="container">
+		<div id="containerScore"></div>
+		<h2 id="containerTitle">Pertanyaan 1</h2>
+		<div id="containerQuestion"></div>
+		<div id="containerOptions"></div>
+		<button id="btnCheck"> Cek Jawaban </button>
+		<button id="btnNext"> Selanjutnya &raquo;</button>
+		<div id="dialogResult">
+			<button id="btnDialogOk">&nbsp;X&nbsp;</button>
+			<p id="containerResult"></p>
+		</div>
+	</div>
 </body>
 </html>
