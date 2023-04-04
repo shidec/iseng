@@ -3,22 +3,22 @@ import Soal from './Soal.js';
 class SoalEmpat extends Soal {
 
     constructor(containerQuestion, containerOptions){
-        super(containerQuestion, containerOptions, 'Presiden indonesia pertama adalah ...',['Sukarno', 'Suharto', 'Habibie', 'SBY', 'Jokowi'], 25);
+        super(containerQuestion, containerOptions, 'Ibukota Peru adalah ...',['Satu', 'Dua', 'Tiga', 'Empat', 'Lima'], 25);
     }
 
     checkAnswer(jawaban){
         let result;
-        if(jawaban == 0){
-            this.question = 'Presiden indonesia saat ini adalah ...';
+        if(jawaban == 4){
+            this.question = 'Ibukota Peru ada ...';
                     
             result = {
-                    html: '<img src="img/wrong.png"/><div>Salah. Presiden Indonesia saat ini adalah Jokowi.</div>',
+                    html: '<img src="img/wrong.png"/><div>Salah. Ibukota Peru ada satu.</div>',
                     score: 0
                 };
         }else{            
-            this.question = 'Presiden indonesia pertama adalah ...';
+            this.question = 'Ibukota Peru adalah ...';
             result = {
-                    html: '<img src="img/wrong.png"/><div>Salah. Presiden indonesia pertama adalah Sukarno.</div>',
+                    html: '<img src="img/wrong.png"/><div>Salah. Ibukota Peru adalah Lima.</div>',
                     score: 0
                 };
         }
