@@ -27,7 +27,7 @@ ol{
     border: 1px solid #666;
     position: absolute;
     padding: 8px;
-    top: 18vh;
+    top: 19.5vh;
     min-height: 20vh;
     display: none;
 }
@@ -52,8 +52,8 @@ ol{
     }
 
     #dialogResult{
-        width: 50vw;
-        left: 25vw;
+        width: 52vw;
+        left: 24vw;
     }
 }
 
@@ -65,7 +65,7 @@ ol{
     }
 
     #dialogResult{
-        width: 80vw;
-        left: 10vw;
+        width: 82vw;
+        left: 9vw;
     }
 }
