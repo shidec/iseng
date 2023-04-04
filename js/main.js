@@ -46,6 +46,8 @@ window.addEventListener('load', function(){
         let jawaban = document.querySelector('input[name="pilihan"]:checked');
 
         if(jawaban != null){
+            document.querySelectorAll('input[name="pilihan"]').forEach(item => item.disabled = true);
+
             let result = questions[questionIndex].checkAnswer(jawaban.value);
             containerResult.innerHTML = result.html;
 
