@@ -1,7 +1,4 @@
 class ScoreController{
-
-    //score = 0;
-
     constructor(container){
         this.score = 0;
         this.container = container;

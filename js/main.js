@@ -6,9 +6,7 @@ import SoalEmpat from './SoalEmpat.js';
 
 'use strict';
 
-
 window.addEventListener('load', function(){
-
     const containerScore = document.getElementById('containerScore');
     const containerTitle = document.getElementById('containerTitle');
     const containerQuestion = document.getElementById('containerQuestion');
@@ -38,8 +36,7 @@ window.addEventListener('load', function(){
     questions[questionIndex].renderOptions();
 
     btnDialogOk.addEventListener('click', function(){
-        
-        dialogResult.style.display = 'none';    
+        dialogResult.style.display = 'none';
     });
 
     btnCheck.addEventListener('click', function(){
