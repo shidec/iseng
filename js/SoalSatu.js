@@ -3,21 +3,21 @@ import Soal from './Soal.js';
 class SoalSatu extends Soal {
 
     constructor(containerQuestion, containerOptions){
-        super(containerQuestion, containerOptions, 'Yang bertugas mempercantik halaman web adalah ...',['HTML', 'CSS', 'JavaScript', 'PHP', 'Python'], 25);
+        super(containerQuestion, containerOptions, 'Presiden Indonesia pertama adalah  ...',['Sukarno', 'Suharto', 'Habibie', 'SBY', 'Jokowi'], 25);
     }
 
     checkAnswer(answer){
         let result;
-        if(answer == 1){
+        if(answer == 0){
             result = {
-                    question: 'Yang bertugas mempercantik halaman web adalah ...',
-                    html: '<img src="img/correct.png"/><div>Betul. Yang bertugas mempercantik halaman web adalah CSS</div>',
+                    question: 'Presiden Indonesia pertama adalah ...',
+                    html: '<img src="img/correct.png"/><div>Betul. Presiden Indonesia pertama adalah Sukarno.</div>',
                     score: this.score
                 };
         }else{
             result = {
-                    question: 'Yang bertugas mempercantik halaman web adalah ...',
-                    html: '<img src="img/wrong.png"/><div>Salah. Yang bertugas mempercantik halaman web adalah CSS</div>',
+                    question: 'Presiden Indonesia pertama adalah ...',
+                    html: '<img src="img/wrong.png"/><div>Salah. Presiden Indonesia pertama adalah Sukarno</div>',
                     score: 0
                 };
         }
